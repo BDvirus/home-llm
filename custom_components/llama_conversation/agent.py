@@ -190,7 +190,7 @@ class LocalLLMAgent(AbstractConversationAgent):
     @property
     def supported_languages(self) -> list[str] | Literal["*"]:
         """Return a list of supported languages."""
-        return MATCH_ALL
+        return ["en"]
     
     def _load_model(self, entry: ConfigEntry) -> None:
         """Load the model on the backend. Implemented by sub-classes"""
